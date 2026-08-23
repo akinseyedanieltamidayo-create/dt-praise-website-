@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book DT PRAISE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #555;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 15px;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 25px;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      background: #222;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #222;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Book DT PRAISE</h1>
+
+    <p class="intro">
+      Invite DT PRAISE to minister at your church, program or special event.
+    </p>
+
+    <form action="https://formspree.io/f/mrpzdvqa" method="POST">
+
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="event">Event / Program Name</label>
+      <input type="text" id="event" name="event" required>
+
+      <label for="event_type">Type of Event</label>
+      <select id="event_type" name="event_type" required>
+        <option value="">Select one</option>
+        <option value="Church Service">Church Service</option>
+        <option value="Concert">Concert</option>
+        <option value="Youth Program">Youth Program</option>
+        <option value="Worship Program">Worship Program</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="date">Event Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="venue">Venue / Location</label>
+      <input type="text" id="venue" name="venue" required>
+
+      <label for="message">Tell us about the invitation</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Booking Request</button>
+
+    </form>
+
+    <a class="back" href="index.html">← Back to DT PRAISE Website</a>
+  </div>
+
+</body>
+</html>
