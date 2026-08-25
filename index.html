@@ -10,68 +10,6 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body
- <!-- DT PRAISE Loading Screen -->
-<div id="loading-screen">
-  <div class="loading-content">
-    <h1>DT PRAISE</h1>
-    <p>Loading Ministry Page...</p>
-    <div class="spinner"></div>
-  </div>
-</div>
-
-<style>
-  #loading-screen {
-    position: fixed;
-    inset: 0;
-    z-index: 99999;
-    background: linear-gradient(135deg, #4b0082, #8a2be2);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: "Segoe UI", sans-serif;
-    transition: opacity 0.5s ease;
-  }
-
-  #loading-screen h1 {
-    font-size: 3rem;
-    margin: 0;
-  }
-
-  #loading-screen p {
-    margin: 10px 0;
-  }
-
-  .spinner {
-    border: 6px solid rgba(255,255,255,0.3);
-    border-top: 6px solid white;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
-    margin: 20px auto;
-  }
-
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-</style>
-
-<script>
-setTimeout(function () {
-    const loader = document.getElementById("loading-screen");
-    if (loader) {
-        loader.style.opacity = "0";
-        setTimeout(function () {
-            loader.style.display = "none";
-        }, 500);
-    }
-}, 8000);
-</script>
-</head>
 <body>
  <!-- PICTURE SECTION -->
 <div style="text-align: center; padding: 30px; background: #f5f5f5;">
