@@ -129,13 +129,13 @@
 <footer>
   © 2026 DT PRAISE • The Mercy Sounds
 </footer>
-<script>
-window.addEventListener("load", function() {
-    setTimeout(function() {
-        document.getElementById("loading-screen").remove();
-    }, 3500);
-});animation: fadeOut 1s ease 3.5s forwards;
-pointer-events: none;
+<<script>
+setTimeout(function () {
+    var loading = document.getElementById("loading-screen");
+    if (loading) {
+        loading.style.display = "none";
+    }
+}, 4000);
 </script>
 </body>
 </body>
